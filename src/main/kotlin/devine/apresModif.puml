@@ -1,0 +1,29 @@
+@startuml
+start
+:lancement de la partie;
+
+repeat
+repeat
+:Saisir Paquet Cartes 32;
+:Saisir Paquet Cartes 52;
+repeat while (Paquet existe?) is (no) not (yes)
+:Instanciation du jeu;
+repeat
+:Entrez la couleur de la carte
+:Entrez le nom de la carte;
+repeat while (Carte existe ?) is (no) not (yes)
+if  (carte match) then (true)
+:Vous avez trouvé la carte;
+end
+else
+:Mauvaise carte;
+:Aide;
+endif
+
+
+
+repeat while (réeassayer) is (oui) not (non)
+:montré la carte a deviné;
+:Vous avez abandonné !;
+:Strategie partie;
+@enduml

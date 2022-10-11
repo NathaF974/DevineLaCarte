@@ -1,0 +1,21 @@
+@startuml
+start
+:lancement de la partie;
+
+:Entrez un paquet de carte oui/non;
+
+:Instanciation du jeu;
+
+:Entrez la couleur de la carte
+:Entrez le nom de la carte;
+:Carte est dans un paquet;
+if  (carte match) then (true)
+:Vous avez trouvé la carte !;
+end
+else
+:Mauvaise carte;
+end
+endif
+
+
+@enduml
